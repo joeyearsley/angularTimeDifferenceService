@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html >
+
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="myModule" ng-controller="ControllerZero">
+    <p>Use this <a href="http://www.epochconverter.com">site</a> to get a millisecond time. <br>
+      <br><br >  Then Type it in here: <br>
+      <!--Can have type text here and parseInt in script -->
+      <input type='number' ng-model='inputBox' /> 
+    </p>
+    <span ng-show="inputBox">That Was Posted {{timeDifference.workOut(inputBox)}}</span>
+  </body>
+
+</html>
